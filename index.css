@@ -1,32 +1,32 @@
-.DropDown{
+.dropdown{
     display:inline-block;
 }
-.DropDown button{
+.dropdown button{
     background-color: magenta;
     color:black;
     padding:10px 15px;
     border: none;
     cursor: pointer;
 }
-.DropDown a{
+.dropdown a{
     display:block;
     color:white;
-    text-decoration: line-through;
+    text-decoration: none;
     padding: 10px 15px;
 }
-.DropDown.content{
+.dropdown .content{
+    position: absolute;
+    background-color: rgb(12, 6, 10);
     display: none;
-    position:absolute;
-    background-color: darkslategray;
     min-width: 100px;
     box-shadow: 2px 2px 5px darkorchid;
 }
-.DropDown:hover.content{
+.dropdown:hover .content{
     display:block;
 }
-.DropDown:hover button{
+.dropdown:hover button{
     background-color: rgb(34, 16, 39);
 }
-.DropDown a:hover{
+.dropdown a:hover{
     background-color: rgb(236, 172, 201);
 }
